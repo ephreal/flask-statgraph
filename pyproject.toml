@@ -4,7 +4,8 @@ build-backend = "hatchling.build"
 
 [project]
 name = "flask-statgraph"
-version = "1.0.2"
+dependencies = ["flask", "flask-sqlalchemy"]
+version = "1.0.3"
 authors = [
   { name="ephreal", email="contact@mylifeneeds.management" },
 ]
