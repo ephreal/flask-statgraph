@@ -3,7 +3,7 @@ import time
 
 from flask import Flask, Response, g, request, render_template, Blueprint
 from flask_sqlalchemy import SQLAlchemy
-from flask_sqlalchemy import Model
+from flask_sqlalchemy.model import Model
 from .utils import StatisticsQueries
 from typing import Callable
 

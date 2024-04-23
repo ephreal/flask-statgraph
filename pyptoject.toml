@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "flask-statgraph"
+version = "1.0.2"
+authors = [
+  { name="ephreal", email="contact@mylifeneeds.management" },
+]
+description = "A package for displaying statistics for flask apps"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/ephreal/flask-statgraph"
+Issues = "https://github.com/ephreal/flask-statgraph/issues"

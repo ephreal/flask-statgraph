@@ -2,7 +2,9 @@ import datetime
 from collections import defaultdict
 from typing import List, Tuple
 
-from flask_sqlalchemy import BaseQuery, Model, SQLAlchemy
+from flask_sqlalchemy.model import Model
+from flask_sqlalchemy.query import Query
+from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import desc, distinct, func
 
 
@@ -17,10 +19,10 @@ class StatisticsQueries:
 
     def _add_date_filter_to_query(
         self,
-        query: BaseQuery,
+        query: Query,
         start_date: datetime.datetime,
         end_date: datetime.datetime
-    ) -> BaseQuery:
+    ) -> Query:
         return query.filter(self.model.date.between(start_date, end_date))
 
     def get_number_of_unique_visitors(

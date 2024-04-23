@@ -5,13 +5,14 @@ with open("README.md", "r") as fh:
     readme = fh.read()
 
 setuptools.setup(
-    name="flask-statistics",
-    version="1.0.1",
-    author="HealYouDown",
+    name="flask-statgraph",
+    version="1.0.2",
+    author="Ephreal",
+    original_creator="HealYouDown",
     description="Package to collect statistics in Flask.",
     long_description=readme,
     long_description_content_type="text/markdown",
-    url="https://github.com/HealYouDown/flask-statistics",
+    url="https://github.com/ephreal/flask-statgraph",
     packages=setuptools.find_packages(),
     include_package_data=True,
     classifiers=[
