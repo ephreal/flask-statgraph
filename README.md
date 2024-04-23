@@ -6,14 +6,14 @@ Flask-Statistics is an extensions that collects data from requests send to the s
 ## Installation
 You can install the extensions with pip:
 
-    $ pip install flask-statistics
+    $ pip install flask-statgraph
 
 ## Usage
 Below is a small example on how to use the extension.
 ```py
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
-from flask_statistics import Statistics
+from flask_statgraph import Statistics
 
 app = Flask(__name__)
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///database.db"
