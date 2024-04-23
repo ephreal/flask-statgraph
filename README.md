@@ -1,7 +1,7 @@
 
-# Flask-Statistics
+# Flask-Statgraph
 
-Flask-Statistics is an extensions that collects data from requests send to the server to then display statistics like response-time, hits, unique hits, etc.
+Flask-Statgraph is an extensions that collects data from requests send to the server to then display statistics like response-time, hits, unique hits, etc.
 
 ## Installation
 You can install the extensions with pip:
@@ -74,7 +74,7 @@ Now, whenever a user requests an endpoint, it will be stored in the defined mode
 |mimetype|```str```|Mimetype of the response send to the client (e.g. html/text).|
 
 ## View the statistics
-Flask-Statistics will add a blueprint with the prefix ```../statistics``` to your app.
+Flask-Statgraph will add a blueprint with the prefix ```../statistics``` to your app.
 
 ![preview_image](https://i.imgur.com/0P3y7E7.png)
 
@@ -84,7 +84,7 @@ Flask-Statistics will add a blueprint with the prefix ```../statistics``` to you
 |STATISTICS_DEFAULT_DATE_SPAN|```datetime.timedelta```|If no date was selected, it will be set to today as end and today - option as start.|```datetime.timedelta(days=7)```
 
 ## Protect the route
-Flask-Statistics accepts a fourth argument: A function that is called before any requests to the statistics blueprint.
+Flask-Statgraph accepts a fourth argument: A function that is called before any requests to the statistics blueprint.
 
 ```py
 ...
